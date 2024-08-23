@@ -1,0 +1,14 @@
+# Smart Split Keyboard configuration
+
+# Copyright (c) 2021 Pete Johanson
+# SPDX-License-Identifier: MIT
+	
+config BOARD_SSK_LEFT
+	bool "SSK Left"
+	depends on SOC_NRF52833_QIAA
+	select BOARD_SSK_LEFT
+
+config BOARD_SSK_RIGHT
+	bool "SSK Right"
+	depends on SOC_NRF52833_QIAA
+	select BOARD_SSK_RIGHT

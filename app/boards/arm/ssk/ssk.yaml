@@ -1,0 +1,22 @@
+identifier: ssk
+name: ssk
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 40
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
+  - gpio
+  - i2c
+  - spi
+  - kscan
+  - can
+  - counter

@@ -1,0 +1,13 @@
+file_format: "1"
+id: ssk
+name: ssk
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+siblings:
+  - ssk_left
+  - ssk_right

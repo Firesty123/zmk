@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT
+
+config BOARD_SSK_LEFT
+    bool
+
+config BOARD_SSK_RIGHT
+    bool

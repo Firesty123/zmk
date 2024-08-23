@@ -1,0 +1,41 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+if BOARD_SSK_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "SSK FYP"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if BOARD_SSK_LEFT || BOARD_SSK_RIGHT
+
+config BOARD
+	default "ssk"
+
+config ZMK_SPLIT
+	default y
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+endif # BOARD_SSK_LEFT || BOARD_SSK_RIGHT
